@@ -16,11 +16,12 @@ class App extends Component {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => {
         console.log(response);
+        // response.json();
         
-        // console.log(response.json());
+        console.log(response.json());
       }
       )
-      // .then((users) => console.log(users));
+      .then((users) => console.log(users));
   }
 
   render() {
