@@ -19,15 +19,13 @@ class App extends Component {
         return response.json();
       }
       )
-      .then((users) => {
-        console.log(users);
-        // this.state.monsters = users;
-        // this.setState.monsters[0] = response[0]; -- ?? why not use like this
-        this.setState(() => {
-          return {monster:users}
-        })
-        console.log('Atentie'+this.state.monsters);
-      });
+      .then((users) => this.setState(() => {
+        return { monsters: users }
+      }, 
+      () => {
+        console.log(this.state);
+      }
+      ));
   }
 
   render() {
