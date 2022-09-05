@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1876f2;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  // top: 0;
+  // left: 0;
+  height: 60px;
+  padding: 10px 25px;
+  align-items: center;
+  z-index: 50;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      margin-right: 45px;
+      // width: 150px;
+      .facebook-logo {
+        width: 45px;
+        height: 45px;
+        font-size: 45px;
+        color: white;
+
+        &:hover {
+          color: darkblue;
+        }
+      }
+      a {
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      .header-button {
+        margin: 0 15px;
+        .navIcons {
+          font-size: 30px;
+          width: 30px;
+          height: 30px;
+          color: white;
+          margin: 0 5px;
+          &:hover {
+            color: darkblue;
+          }
+        }
+      }
+    }
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .mainSearch {
+      // display: flex;
+      // align-items: center;
+      margin-right: 30px;
+      .search-box {
+        width: 350px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 0 15px;
+        background-color: white;
+        border: 1px solid #e0e3e9;
+        
+      }
+    }
+
+    .header-user-icon {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      &::after{
+        content: '';
+        width: 7px;
+        height: 7px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background-color: #41db51;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+      }
+      .user-icon {        
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+  }
+}
