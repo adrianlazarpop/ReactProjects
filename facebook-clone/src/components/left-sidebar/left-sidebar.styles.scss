@@ -1,9 +1,52 @@
-.leftSidebar{
-  background-color: #cbdffa;
-  margin-top: 60px;
+.leftSidebar {
+  background-color: lightblue;
+  margin-top: 20px;
   width: 250px;
   position: sticky;
+  top: 0;
   height: 100vh;
   flex-basis: 25%;
+  .leftNavigation {
+    display: flex;
+    flex-direction: column;
+    .header-button {
+      margin: 5px 5px;
+      display: flex;
+      align-items: center;
+      height: 55px;
+      cursor: pointer;
+      border-radius: 10px;
 
+
+
+      a {
+        margin-left: 15px;
+        display: flex;
+        flex-direction: rox;
+        align-items: center;
+        color: #626262;
+        .leftIcons {
+          font-size: 30px;
+          width: 30px;
+          height: 30px;
+          color: white;
+
+          margin-right: 20px;
+
+        }
+
+      }
+
+      .seeMore{
+        color: darkblue;
+      }
+
+      &:hover {
+        // color: darkblue;
+        background-color: darkgreen;
+      }
+    }
+
+    
+  }
 }

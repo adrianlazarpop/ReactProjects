@@ -26,7 +26,7 @@ const Header = () => {
           </form>
         </div>
         <div className='header-user-icon'>
-          <img className='user-icon' src={userIcon}></img>
+          <img className='user-icon' src={require('../../assets/images/user-icon.png')}></img>
         </div>
 
 
