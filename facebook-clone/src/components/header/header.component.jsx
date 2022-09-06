@@ -1,19 +1,23 @@
 import './header.styles.scss';
-import userIcon from '../../assets/images/user-icon.png';
+
 
 const Header = () => {
+
+ 
+
+
   return (
     <div className='header'>
 
       <div className='header-left'>
         <div className="logo">
-          <a href=''><i class="facebook-logo fa-brands fa-square-facebook"></i>acebook</a>
+          <a href=''><i className="facebook-logo fa-brands fa-square-facebook"></i>acebook</a>
         </div>
 
         <ul className="navigation">
-          <li className="header-button"><a href=''><i class="navIcons fa-regular fa-bell"></i></a></li>
-          <li className="header-button"><a href=''><i class="navIcons fa-regular fa-envelope"></i></a></li>
-          <li className="header-button"><a href=''><i class="navIcons fa-regular fa-circle-play"></i></a></li>
+          <li className="header-button"><a href=''><i className="navIcons fa-regular fa-bell"></i></a></li>
+          <li className="header-button"><a href=''><i className="navIcons fa-regular fa-envelope"></i></a></li>
+          <li className="header-button"><a href=''><i className="navIcons fa-regular fa-circle-play"></i></a></li>
           
         </ul>
       </div>

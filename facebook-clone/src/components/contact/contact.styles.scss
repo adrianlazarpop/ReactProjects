@@ -1,0 +1,39 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover{
+    background-color: rgb(198, 212, 243);
+    transition: 0.5s;
+
+  }
+  .header-user-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    &::after {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border: 2px solid white;
+      border-radius: 50%;
+      background-color: #41db51;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .user-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+

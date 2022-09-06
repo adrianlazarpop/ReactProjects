@@ -1,12 +1,17 @@
-import Header from "./components/header/header.component";
-import MainContent from "./components/main-content/main-content.component";
+import { Routes, Route } from 'react-router-dom';
+
+import Home from './routes/home/home.component';
+import SignIn from './routes/sign-in/sign-in.component';
+
 
 const App = () => {
   return (
-    <div className="App">
-      <Header/>
-      <MainContent/>
-    </div>
+    <Routes>
+
+        <Route path='/' element={<Home />} />
+        <Route path='/sign-in' element={<SignIn />} />
+
+    </Routes>
   );
 }
 
