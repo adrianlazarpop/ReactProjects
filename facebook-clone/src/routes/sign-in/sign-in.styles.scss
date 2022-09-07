@@ -1,0 +1,42 @@
+@import '../../assets/colors/variables';
+.pageSignIn{
+  // background-color: red;
+  .mainSignInContent{
+    display: flex;
+    flex-direction: rox;
+    justify-content: center;
+    align-items: center;
+    height: 720px; 
+
+    
+    .signInTitle{
+      width: 580px;
+      padding-right: 32px;
+      h1{
+        font-size: 56px;
+        color: $ButtonBlue;
+      }
+      h2{
+        font-size: 28px;
+        width: 500px;
+        font-weight: lighter;
+        
+      }
+    }
+    .horizontalLine{
+      border-bottom: 1px solid $LightGrey;
+      margin: 20px 0;
+
+    }
+  
+  }
+
+
+  
+  footer {
+    background-color: white;
+    color: #8a8d91;  
+    text-align: center;
+    padding-top: 10px;
+  }
+}

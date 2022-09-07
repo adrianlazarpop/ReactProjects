@@ -1,7 +1,12 @@
+@import './assets/colors/variables';
+
+html {
+  background-color: white;
+}
 body { 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #efefef;
+  background-color: $GlobalLightBackground;
 }
 
 * {

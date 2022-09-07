@@ -1,0 +1,25 @@
+@import "../../assets/colors/variables";
+
+@mixin inputStyles {
+  border: 1px solid $LightGrey;
+  width: 332px;
+  height: 52px;
+  font-size: 17px;
+  padding: 14px 16px;
+  border-radius: 6px;
+  outline: none;
+  margin: 6px 0;
+  &:focus-visible {
+    border: 1px solid $ButtonBlue;
+    outline: none;
+  }
+
+}
+
+.username {
+  @include inputStyles()
+}
+
+.password {
+  @include inputStyles()
+}

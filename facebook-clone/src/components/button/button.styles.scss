@@ -1,23 +1,32 @@
-.clasaTest {
-  background-color: #1877f2;
+@import "../../assets/colors/variables";
+
+@mixin buttonStyles($width, $fontSize, $color) {
   border: none;
   border-radius: 6px;
-  font-size: 20px;
   line-height: 48px;
   padding: 0 16px;
-  width: 332px;
   color: white;
   font-weight: bold;
+  margin: 6px 0;
+  width: $width;
+  font-size: $fontSize;
+  &:hover{
+    cursor: pointer;
+    background-color: $color;
+  }
 }
 
-.clasaTest {
-  background-color: #42b72a;
-  border: none;
-  border-radius: 6px;
-  font-size: 17px;
-  line-height: 48px;
-  padding: 0 16px;
-  width: 200px;
-  color: white;
-  font-weight: bold;
+.componentButton {
+  display: flex;
+  justify-content: center;
+
+  .logIn {
+    background-color: $ButtonBlue;
+    @include buttonStyles(332px, 20px, #166fe5);
+  }
+
+  .newAccount {
+    background-color: $ButtonGreen;
+    @include buttonStyles(200px, 17px, #36a420);
+  }
 }
