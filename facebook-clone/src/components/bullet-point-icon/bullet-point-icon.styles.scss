@@ -1,0 +1,23 @@
+.header-user-icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-right: 12px;
+  &::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #41db51;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

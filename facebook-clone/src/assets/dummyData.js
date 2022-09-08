@@ -1,5 +1,4 @@
-
-export const users = [
+export const usersData = [
   {
     id: 1,
     firstName: 'Gabriel',

@@ -1,5 +1,6 @@
+@import '../../assets/colors/variables';
 .leftSidebar {
-  background-color: lightblue;
+  // background-color: lightblue;
   margin-top: 20px;
   width: 250px;
   position: sticky;
@@ -10,14 +11,13 @@
     display: flex;
     flex-direction: column;
     .header-button {
-      margin: 5px 5px;
+      margin: 0px 5px;
       display: flex;
       align-items: center;
       height: 55px;
       cursor: pointer;
       border-radius: 10px;
-
-
+      transition: 0.2s;
 
       a {
         margin-left: 15px;
@@ -29,24 +29,38 @@
           font-size: 30px;
           width: 30px;
           height: 30px;
-          color: white;
-
+          color: $ButtonBlue;
           margin-right: 20px;
-
         }
-
       }
 
       .seeMore{
-        color: darkblue;
+        color: $ButtonBlue;
       }
 
       &:hover {
         // color: darkblue;
-        background-color: darkgreen;
+        background-color: rgb(198, 212, 243);
+        transition: 0.001s;
       }
-    }
-
-    
+    }    
   }
+  .horizontalLine{
+    border-bottom: 1px solid $LightGrey;
+    margin: 10px 0;
+
+  }
+  .square-bullet-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-right: 12px;
+    .user-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  }
+  
 }

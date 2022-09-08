@@ -1,3 +1,4 @@
+import BulletPointIcon from '../bullet-point-icon/bullet-point-icon.component';
 import './header.styles.scss';
 
 
@@ -32,6 +33,7 @@ const Header = () => {
         <div className='header-user-icon'>
           <img className='user-icon' src={require('../../assets/images/user-icon.png')}></img>
         </div>
+        <BulletPointIcon />
 
 
 
