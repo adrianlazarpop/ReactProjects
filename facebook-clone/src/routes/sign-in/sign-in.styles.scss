@@ -1,25 +1,28 @@
 @import '../../assets/colors/variables';
 .pageSignIn{
+
+
   // background-color: red;
   .mainSignInContent{
+    padding: 0 25px;
+    max-width: 1200px;
     display: flex;
-    flex-direction: rox;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    height: 720px;
-    
-
+    height: 720px;  
+    margin: auto; 
     
     .signInTitle{
-      width: 580px;
-      padding-right: 150px;
+      max-width: 500px;
+      // padding-right: 150px;
       h1{
         font-size: 56px;
         color: $ButtonBlue;
       }
       h2{
         font-size: 28px;
-        width: 500px;
+        // max-width: 500px;
         font-weight: lighter;
         
       }

@@ -8,7 +8,6 @@ const RightSidebar = () => {
   return (
     <div className='rightSidebar'>
       <h3>Contacts</h3>
-      <ClickableSmallContainer imgLink={usersData[2].img} firstName={usersData[0].firstName} lastName={usersData[0].lastName} />
       {usersData.map((data) => {
         return (
           <ClickableSmallContainer key={data.id} imgLink={data.img}>

@@ -17,7 +17,6 @@ const SignIn = () => {
         </div>
 
         <Card>
-
           <InputSignIn placeholder={'Email or phone number'} type={'username'}/>
           <InputSignIn placeholder={'Password'} type={'password'}/>
           
