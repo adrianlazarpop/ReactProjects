@@ -20,12 +20,12 @@
   display: flex;
   justify-content: center;
 
-  .logIn {
+  .primary {
     background-color: $ButtonBlue;
     @include buttonStyles(332px, 20px, #166fe5);
   }
 
-  .newAccount {
+  .success {
     background-color: $ButtonGreen;
     @include buttonStyles(200px, 17px, #36a420);
   }

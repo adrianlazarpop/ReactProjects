@@ -1,4 +1,8 @@
-import BulletPointIcon from '../bullet-point-icon/bullet-point-icon.component';
+
+
+import icon from '../../assets/images/user-icon.png';
+import CircleIcon from '../icon/circle-icon/cicle-icon.component';
+
 import './header.styles.scss';
 
 
@@ -30,10 +34,9 @@ const Header = () => {
             <input type="search" className="search-box" placeholder="&#x1F50E;&#xFE0E; Search..." />
           </form>
         </div>
-        <div className='header-user-icon'>
-          <img className='user-icon' src={require('../../assets/images/user-icon.png')}></img>
-        </div>
-        <BulletPointIcon />
+
+
+        <CircleIcon imgSrc={icon} />
 
 
 

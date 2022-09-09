@@ -1,6 +1,7 @@
-import BulletPointIcon from '../bullet-point-icon/bullet-point-icon.component';
-import BulletSquareIcon from '../bullet-square-icon/bullet-square-icon.component';
+import SquareIcon from '../icon/square-icon/square-icon.component';
 import ClickableSmallContainer from '../clickable-small-container/clickable-small-container.component';
+import { shortcutsData } from '../../assets/dummyData';
+
 import './left-sidebar.styles.scss';
 
 const LeftSidebar = () => {
@@ -28,19 +29,22 @@ const LeftSidebar = () => {
       </ul>
 
       <div className="horizontalLine"></div>
-      <p>Your Shortcuts</p>
-      
-      <ClickableSmallContainer>
-        <div className='square-bullet-icon'>
-          <img alt='img' className='user-icon' src={require('../../assets/images/img1.png')}></img>
-        </div>
-        <p>Web Development</p>
-      </ClickableSmallContainer>
 
-      <ClickableSmallContainer>
-        <BulletSquareIcon/>
-        <p>Web Development</p>
-      </ClickableSmallContainer>
+      <p>Your Shortcuts</p>
+
+      {
+        shortcutsData.map((shortcut) => {
+          return (
+            <ClickableSmallContainer key={shortcut.id}>
+              <SquareIcon  imgSrc={shortcut.img} />
+              <p>{shortcut.name}</p>
+            </ClickableSmallContainer>
+          )
+        })
+      }
+
+
+
 
 
 
