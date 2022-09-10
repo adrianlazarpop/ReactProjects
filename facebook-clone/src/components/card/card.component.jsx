@@ -1,9 +1,9 @@
 import './card.styles.scss';
 
 
-const Card = ({ children }) => {
+const Card = ({ children , padding }) => {
   return (
-    <div className='card'>
+    <div className={`card-padding-${padding}`}>
       { children }
     </div>
   )
