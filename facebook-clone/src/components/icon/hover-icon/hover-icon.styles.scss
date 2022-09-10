@@ -1,4 +1,4 @@
-.hover-icon-container {
+// .hover-icon-container {
   // width: 120px;
   // height: 200px;
   // position: relative;
@@ -11,17 +11,19 @@
   // }
   
   .hover-icon {
-    width: 120px;
+    width: 110px;
     height: 200px;
     position: relative;
-    margin-right: 12px;
+    border-radius: 7px;
+    object-fit: cover;
+
     cursor: pointer;
     transition: transform 100ms ease-in;
     &:hover{
       transform: scale(1.1);
     }
   }
-}
+// }
 
 
 

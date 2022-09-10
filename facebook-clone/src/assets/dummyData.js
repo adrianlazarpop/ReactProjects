@@ -1,3 +1,32 @@
+export const hoverData = [
+  {
+    id: 2,
+    name: "Dog Owner Group",
+    img: "img2.png",
+  },
+  {
+    id: 4,
+    name: "Dog Owner Group",
+    img: "img4.png",
+  },
+  {
+    id: 10,
+    name: "Dog Owner Group",
+    img: "img10.png",
+  },
+  {
+    id: 5,
+    name: "Dog Owner Group",
+    img: "img5.png",
+  },
+  {
+    id: 12,
+    name: "Dog Owner Group",
+    img: "img12.png",
+  },
+  
+]
+
 export const shortcutsData = [
   {
     id: 1,

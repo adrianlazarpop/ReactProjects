@@ -1,37 +1,34 @@
-import './main-content.styles.scss';
+import "./main-content.styles.scss";
+import { hoverData } from "../../assets/dummyData";
+import HoverIcon from "../icon/hover-icon/hover-icon.component";
+import Card from "../card/card.component";
 
-import { shortcutsData } from '../../assets/dummyData';
-
-import icont from '../../assets/images/img4.png';
-import iconm from '../../assets/images/user-icon.png';
-import SquareIcon from '../icon/square-icon/square-icon.component';
-import HoverIcon from '../icon/hover-icon/hover-icon.component';
-import Card from '../card/card.component';
+import icont from "../../assets/images/img4.png";
 
 const MainContent = () => {
-  console.log(icont);
-  console.log(shortcutsData[0].img);
   return (
-
     <div className="mainContentComponent">
       <h1> Main Component not rendered!!!!</h1>
 
-      <Card padding='min'>
-        <HoverIcon imgSrc={icont} />
+      {/* <Card padding="min" flex="row">
+        <HoverIcon img={icont} />
+        <HoverIcon img={icont} />
+        <HoverIcon img={icont} />
+        <HoverIcon img={icont} />
+        <HoverIcon img={icont} />
+      </Card> */}
+
+      <Card padding="min" flex="row">
+        {hoverData.map((data) => {
+          return <HoverIcon key={data.id} img={data.img} />;
+        })}
       </Card>
+      <i className="fa-solid fa-circle-plus"></i>
+
 
       <p>test</p>
-      <img alt='img' src={icont} />
-      <img alt='img' src={shortcutsData[0].img}></img>
-      <SquareIcon img={shortcutsData[0].img} />
-
-
-      <img src={iconm} />
-
-
     </div>
-
-  )
-}
+  );
+};
 
 export default MainContent;

@@ -1,6 +1,13 @@
-@mixin common {
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@mixin flex-column {
   display: flex;
   flex-direction: column;
+}
+@mixin common {
   background-color: white;
   border: 1px solid grey;
   border: none;
@@ -8,17 +15,38 @@
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
 }
 
-.card-padding-yes {
+.card-padding-yes-flex-column {
   @include common;
+  @include flex-column;
   padding: 20px 15px 28px;
 }
 
-.card-padding-min {
+.card-padding-min-flex-column {
   @include common;
+  @include flex-column;
   padding: 15px;
 }
 
-.card-padding-no {
+.card-padding-no-flex-column {
   @include common;
+  @include flex-column;
+  padding: 0;
+}
+
+.card-padding-yes-flex-row {
+  @include common;
+  @include flex-row;
+  padding: 20px 15px 28px;
+}
+
+.card-padding-min-flex-row {
+  @include common;
+  @include flex-row;
+  padding: 15px;
+}
+
+.card-padding-no-flex-row {
+  @include common;
+  @include flex-row;
   padding: 0;
 }

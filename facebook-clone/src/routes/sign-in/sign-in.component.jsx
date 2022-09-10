@@ -16,7 +16,7 @@ const SignIn = () => {
           <h2>Connect with friends and the world around you on Facebook.</h2>
         </div>
 
-        <Card padding='yes'>
+        <Card padding='yes' flex='column'>
           <InputSignIn placeholder={'Email or phone number'} type={'username'}/>
           <InputSignIn placeholder={'Password'} type={'password'}/>
           
