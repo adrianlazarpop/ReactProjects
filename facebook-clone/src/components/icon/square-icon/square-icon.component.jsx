@@ -5,7 +5,7 @@ const SquareIcon = ({ img }) => {
 
   return (
     <div className="square-icon-container">
-      <img alt="img" className="square-icon" src={src}></img>
+      <img alt="img" className="square-icon" src={src} />
     </div>
   );
 };
