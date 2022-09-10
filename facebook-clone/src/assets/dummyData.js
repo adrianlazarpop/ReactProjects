@@ -1,126 +1,108 @@
-import image1 from './images/user-icon1.png';
-import image2 from './images/user-icon2.png';
-import image3 from './images/user-icon3.png';
-import image4 from './images/user-icon4.png';
-import image5 from './images/user-icon5.png';
-import image6 from './images/user-icon6.png';
-import image7 from './images/user-icon7.png';
-import image8 from './images/user-icon8.png';
-import image9 from './images/user-icon9.png';
-import image10 from './images/user-icon10.png';
-import image11 from './images/user-icon11.png';
-
-import shortcutImg1 from './images/img1.png';
-import shortcutImg2 from './images/img2.png';
-import shortcutImg3 from './images/img3.png';
-import shortcutImg4 from './images/img4.png';
-import shortcutImg5 from './images/img5.png';
-import shortcutImg6 from './images/img6.png';
-import shortcutImg7 from './images/img7.png';
-import shortcutImg8 from './images/img8.png';
-import shortcutImg9 from './images/img9.png';
-import shortcutImg10 from './images/img10.png';
-import shortcutImg11 from './images/img11.png';
-
-
 export const shortcutsData = [
   {
     id: 1,
-    name: 'Dog Owner Group',
-    img: shortcutImg1
+    name: "Dog Owner Group",
+    img: "img1.png",
   },
   {
     id: 3,
-    name: 'Baketball FanClub',
-    img: shortcutImg3
+    name: "Baketball FanClub",
+    img: "img3.png",
   },
   {
     id: 6,
-    name: 'Outdoor Fitness',
-    img: shortcutImg6
+    name: "Outdoor Fitness",
+    img: "img6.png",
   },
   {
     id: 7,
-    name: 'Healthy Foods Recipes',
-    img: shortcutImg7
+    name: "Healthy Foods Recipes",
+    img: "img7.png",
   },
   {
     id: 8,
-    name: 'Stock Market Investing Tips',
-    img: shortcutImg8
+    name: "Stock Market Investing Tips",
+    img: "img8.png",
   },
   {
     id: 9,
-    name: 'Web Development Course',
-    img: shortcutImg9
+    name: "Web Development Course",
+    img: "img9.png",
   },
-]
+];
+
+export const currentUser = {
+  id: 0,
+  firstName: "Adrian",
+  lastName: "Pop",
+  img: "user-icon.png",
+};
 
 export const usersData = [
   {
     id: 1,
-    firstName: 'Gabriel',
-    lastName: 'Stan',
-    img: image1
+    firstName: "Gabriel",
+    lastName: "Stan",
+    img: "user-icon1.png",
   },
   {
     id: 2,
-    firstName: 'Louise',
-    lastName: 'Mullins',
-    img: image2
+    firstName: "Louise",
+    lastName: "Mullins",
+    img: "user-icon2.png",
   },
   {
     id: 3,
-    firstName: 'Francis',
-    lastName: 'Martins',
-    img: image3
+    firstName: "Francis",
+    lastName: "Martins",
+    img: "user-icon3.png",
   },
   {
     id: 4,
-    firstName: 'Anderson',
-    lastName: 'Conway',
-    img: image4
+    firstName: "Anderson",
+    lastName: "Conway",
+    img: "user-icon4.png",
   },
   {
     id: 5,
-    firstName: 'Jodie',
-    lastName: 'Hinton',
-    img: image5
+    firstName: "Jodie",
+    lastName: "Hinton",
+    img: "user-icon5.png",
   },
   {
     id: 6,
-    firstName: 'Joe',
-    lastName: 'Zhang',
-    img: image6
+    firstName: "Joe",
+    lastName: "Zhang",
+    img: "user-icon6.png",
   },
   {
     id: 7,
-    firstName: 'Briana',
-    lastName: 'Hewitt',
-    img: image7
+    firstName: "Briana",
+    lastName: "Hewitt",
+    img: "user-icon7.png",
   },
   {
     id: 8,
-    firstName: 'Yosef',
-    lastName: 'Dickson',
-    img: image8
+    firstName: "Yosef",
+    lastName: "Dickson",
+    img: "user-icon8.png",
   },
   {
     id: 9,
-    firstName: 'Margo',
-    lastName: 'Beard',
-    img: image9
+    firstName: "Margo",
+    lastName: "Beard",
+    img: "user-icon9.png",
   },
   {
     id: 10,
-    firstName: 'Alisha',
-    lastName: 'Feeney',
-    img: image10
+    firstName: "Alisha",
+    lastName: "Feeney",
+    img: "user-icon10.png",
   },
   {
     id: 11,
-    firstName: 'Klaudia',
-    lastName: 'Fellows',
-    img: image11
+    firstName: "Klaudia",
+    lastName: "Fellows",
+    img: "user-icon11.png",
   },
-]
+];
