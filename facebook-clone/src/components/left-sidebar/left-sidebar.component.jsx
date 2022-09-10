@@ -36,7 +36,7 @@ const LeftSidebar = () => {
         shortcutsData.map((shortcut) => {
           return (
             <ClickableSmallContainer key={shortcut.id}>
-              <SquareIcon  imgSrc={shortcut.img} />
+              <SquareIcon  img={shortcut.img} />
               <p>{shortcut.name}</p>
             </ClickableSmallContainer>
           )

@@ -12,7 +12,7 @@ const RightSidebar = () => {
       {usersData.map((data) => {
         return (
           <ClickableSmallContainer key={data.id} imgLink={data.img}>
-            <CircleIcon imgSrc={data.img} />
+            <CircleIcon img={data.img} />
             <div className='name'>
               <p>{data.firstName} {data.lastName}</p>
             </div>
