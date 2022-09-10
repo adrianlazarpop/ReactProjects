@@ -1,8 +1,18 @@
-.circle-icon-container {
+@mixin commonContainer {
   width: 40px;
   height: 40px;
   position: relative;
   margin-right: 12px;
+}
+@mixin commonItem {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circle-icon-container-is-active-yes {
+  @include commonContainer;
   &::after {
     content: "";
     width: 7px;
@@ -14,12 +24,15 @@
     // top: 0;
     right: 0;
     bottom: 0;
-
   }
   .circle-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
+    @include commonItem;
+  }
+}
+
+.circle-icon-container-is-active-no {
+  @include commonContainer;
+  .circle-icon {
+    @include commonItem;
   }
 }

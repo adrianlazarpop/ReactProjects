@@ -1,6 +1,7 @@
 import SquareIcon from "../icon/square-icon/square-icon.component";
 import ClickableSmallContainer from "../clickable-small-container/clickable-small-container.component";
 import { shortcutsData } from "../../assets/dummyData";
+import HorizontalLine from "../horizontal-line/horizontal-line.component";
 
 import "./left-sidebar.styles.scss";
 
@@ -59,27 +60,18 @@ const LeftSidebar = () => {
           </a>
         </li>
       </ul>
-
-      <div className="horizontalLine"></div>
+      <HorizontalLine />
 
       <p>Your Shortcuts</p>
 
-      {
-        shortcutsData.map((shortcut) => {
-          return (
-            <ClickableSmallContainer key={shortcut.id}>
-              <SquareIcon  img={shortcut.img} />
-              <p>{shortcut.name}</p>
-            </ClickableSmallContainer>
-          )
-        })
-      }
-
-
-
-
-
-
+      {shortcutsData.map((shortcut) => {
+        return (
+          <ClickableSmallContainer key={shortcut.id}>
+            <SquareIcon img={shortcut.img} />
+            <p>{shortcut.name}</p>
+          </ClickableSmallContainer>
+        );
+      })}
     </div>
   );
 };

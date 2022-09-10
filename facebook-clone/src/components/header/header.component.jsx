@@ -25,7 +25,7 @@ const Header = () => {
           </form>
         </div>
 
-        <CircleIcon img={currentUser.img} />
+        <CircleIcon img={currentUser.img} isActive='no' />
       </div> 
     </div>
   )

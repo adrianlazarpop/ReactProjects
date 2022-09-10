@@ -1,7 +1,7 @@
 import Button from "../../components/button/button.component";
 import Card from "../../components/card/card.component";
 import InputSignIn from "../../components/input-signin/input-signin";
-
+import HorizontalLine from "../../components/horizontal-line/horizontal-line.component";
 import './sign-in.styles.scss';
 
 
@@ -21,7 +21,7 @@ const SignIn = () => {
           <InputSignIn placeholder={'Password'} type={'password'}/>
           
           <Button type={'primary'} text={'Log In'} />
-          <div className="horizontalLine"></div>
+          <HorizontalLine />
           <Button type={'success'} text={'Create new account'} />
         </Card>
 
