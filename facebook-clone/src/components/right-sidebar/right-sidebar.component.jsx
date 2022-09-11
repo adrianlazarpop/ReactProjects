@@ -11,7 +11,7 @@ const RightSidebar = () => {
       
       {usersData.map((data) => {
         return (
-          <ClickableSmallContainer key={data.id} imgLink={data.img}>
+          <ClickableSmallContainer key={data.id} justifyContent='flex-start'>
             <CircleIcon img={data.img} isActive='yes' />
             <div className='name'>
               <p>{data.firstName} {data.lastName}</p>

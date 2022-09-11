@@ -1,4 +1,4 @@
-.contact {
+@mixin ClickableContainerCommon {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,11 +9,15 @@
   &:hover{
     background-color: rgb(198, 212, 243);
     transition: 0.001s;
-
   }
 
 }
+.clickable-container-justify-content-flex-start {
+  @include ClickableContainerCommon;
+  justify-content: flex-start;
+}
 
-
-
-
+.clickable-container-justify-content-center {
+  @include ClickableContainerCommon;
+  justify-content: center;
+}

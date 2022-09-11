@@ -1,8 +1,8 @@
 import './clickable-small-container.styles.scss';
 
-const ClickableSmallContainer = ({ children }) => { 
+const ClickableSmallContainer = ({ children , justifyContent }) => { 
   return (
-    <div className="contact">
+    <div className={`clickable-container-justify-content-${justifyContent}`}>
       {children}
     </div>
 

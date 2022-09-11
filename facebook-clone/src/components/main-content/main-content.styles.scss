@@ -1,16 +1,23 @@
-.mainContentComponent{
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainContentComponent {
   display: flex;
   flex-direction: column;
   flex-basis: 47%;
 
-  .post-actions-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+  .post-input-container {
+    @include flex-row;
+  }
+
+  .post-buttons-container {
+    @include flex-row;
+
     .test-class {
       flex-basis: 45%;
     }
   }
 }
-

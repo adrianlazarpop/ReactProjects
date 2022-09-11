@@ -1,8 +1,8 @@
-@import "../../assets/colors/variables";
+@import "../../../assets/colors/variables";
 
 @mixin inputStyles {
   border: 1px solid $LightGrey;
-  width: 332px;
+  // width: 332px;
   height: 52px;
   font-size: 17px;
   padding: 14px 16px;
@@ -13,13 +13,12 @@
     border: 1px solid $ButtonBlue;
     outline: none;
   }
-
 }
 
 .username {
-  @include inputStyles()
+  @include inputStyles();
 }
 
 .password {
-  @include inputStyles()
+  @include inputStyles();
 }

@@ -3,6 +3,7 @@ import { currentUser, hoverData } from "../../assets/dummyData";
 import HoverIcon from "../icon/hover-icon/hover-icon.component";
 import Card from "../card/card.component";
 import CircleIcon from "../icon/circle-icon/cicle-icon.component";
+import RoundedInput from "../input/rounded-input/rounded-input.component";
 
 // import icont from "../../assets/images/img4.png";
 import HorizontalLine from "../horizontal-line/horizontal-line.component";
@@ -11,48 +12,46 @@ import ClickableSmallContainer from "../clickable-small-container/clickable-smal
 const MainContent = () => {
   return (
     <div className="mainContentComponent">
-      <h1> Main Component not rendered!!!!</h1>
-
-      {/* <Card padding="min" flex="row">
-        <HoverIcon img={icont} />
-        <HoverIcon img={icont} />
-        <HoverIcon img={icont} />
-        <HoverIcon img={icont} />
-        <HoverIcon img={icont} />
-      </Card> */}
-
+      {/* Stories Sextion */}
       <Card padding="min" flex="row">
         {hoverData.map((data) => {
           return <HoverIcon key={data.id} img={data.img} />;
         })}
       </Card>
       <i className="fa-solid fa-circle-plus"></i>
-
+      {/* Create aPost Section */}
       <Card padding="min" flex="column">
-        <div>
+        <div className="post-input-container">
           <CircleIcon img={currentUser.img} isActive="no" />
+          <RoundedInput placeholder="What's on your mind?" />
         </div>
         <HorizontalLine />
-        <div className="post-actions-container">
+        <div className="post-buttons-container">
           <div className="test-class">
-            <ClickableSmallContainer>
-              <p>test</p>
+            <ClickableSmallContainer justifyContent="center">
+              <i className="fa-solid fa-video"></i>
+              <p>Live Video</p>
             </ClickableSmallContainer>
           </div>
           <div className="test-class">
-            <ClickableSmallContainer>
-              <p>test</p>
+            <ClickableSmallContainer justifyContent="center">
+              <i className="fa-solid fa-file-image"></i>
+              <p>Photo/Video</p>
             </ClickableSmallContainer>
           </div>
           <div className="test-class">
-            <ClickableSmallContainer>
-              <p>test</p>
+            <ClickableSmallContainer justifyContent="center">
+              <i class="fa-solid fa-face-laugh"></i>
+              <p>Feeling/activity</p>
             </ClickableSmallContainer>
           </div>
         </div>
       </Card>
-
       <p>test</p>
+      {/* Posts Section */}
+      <Card padding="no" flex="column">
+        <p>test</p>
+      </Card>
     </div>
   );
 };
