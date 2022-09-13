@@ -1,3 +1,14 @@
+export const postsData = [
+  {
+    id: 1,
+    userName: "Adrian Pop",
+    date: "September 10, 14:20 PM",
+    img: "post1.png",
+    description: "Best class ever!",
+    likes: 10,
+    comments: 15,
+  },
+]
 export const hoverData = [
   {
     id: 2,
@@ -24,7 +35,7 @@ export const hoverData = [
     name: "Dog Owner Group",
     img: "img12.png",
   },
-  
+
 ]
 
 export const shortcutsData = [

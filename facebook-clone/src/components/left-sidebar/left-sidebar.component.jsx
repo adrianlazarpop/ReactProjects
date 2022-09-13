@@ -66,7 +66,10 @@ const LeftSidebar = () => {
 
       {shortcutsData.map((shortcut) => {
         return (
-          <ClickableSmallContainer key={shortcut.id} justifyContent='flex-start'>
+          <ClickableSmallContainer
+            key={shortcut.id}
+            justifyContent="flex-start"
+          >
             <SquareIcon img={shortcut.img} />
             <p>{shortcut.name}</p>
           </ClickableSmallContainer>
