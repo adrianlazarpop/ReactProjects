@@ -1,0 +1,29 @@
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  .profile-user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .profile-name {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .profile-options {
+    // margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    /* background-color: red; */
+
+}
+}

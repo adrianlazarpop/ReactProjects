@@ -5,6 +5,8 @@ import Card from "../card/card.component";
 import CircleIcon from "../icon/circle-icon/cicle-icon.component";
 import RoundedInput from "../input/rounded-input/rounded-input.component";
 import { postsData } from "../../assets/dummyData";
+import PostHeader from "../post/post-header/post-header.component";
+import PostFooter from "../post/post-footer/post-footer.component";
 
 // import icont from "../../assets/images/img4.png";
 import HorizontalLine from "../horizontal-line/horizontal-line.component";
@@ -20,7 +22,8 @@ const MainContent = () => {
           return <HoverIcon key={data.id} img={data.img} />;
         })}
       </Card>
-      <i className="fa-solid fa-circle-plus"></i>
+      {/* <i className="fa-solid fa-circle-plus"></i> */}
+
       {/* Create aPost Section */}
       <Card padding="min" flex="column">
         <div className="post-input-container">
@@ -49,13 +52,19 @@ const MainContent = () => {
           </div>
         </div>
       </Card>
-      <p>test</p>
-      <i class="fas fa-ellipsis-h"></i>
+
       {/* Posts Section */}
       <Card padding="no" flex="column">
+        <PostHeader />
         <img alt="img" className="post-img" src={src} />
+        <PostFooter />
+      </Card>
 
-        <p>test</p>
+      {/* Posts Section */}
+      <Card padding="no" flex="column">
+        <PostHeader />
+        <img alt="img" className="post-img" src={src} />
+        <PostFooter />
       </Card>
     </div>
   );
