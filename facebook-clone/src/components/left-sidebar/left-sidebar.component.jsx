@@ -23,11 +23,6 @@ const LeftSidebar = () => {
         </li>
         <li className="header-button">
           <a href="">
-            <i className="leftIcons fa-solid fa-cart-shopping"></i>Groups
-          </a>
-        </li>
-        <li className="header-button">
-          <a href="">
             <i className="leftIcons fa-regular fa-circle-play"></i>Marketplace
           </a>
         </li>

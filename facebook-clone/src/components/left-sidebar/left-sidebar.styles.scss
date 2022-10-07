@@ -45,22 +45,5 @@
       }
     }    
   }
-  .horizontalLine{
-    border-bottom: 1px solid $LightGrey;
-    margin: 10px 0;
-
-  }
-  .square-bullet-icon {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    margin-right: 12px;
-    .user-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-  }
   
 }
