@@ -64,6 +64,7 @@ const MainContent = () => {
       <Card padding="no" flex="column">
         <PostHeader />
         <img alt="img" className="post-img" src={src} />
+        <HorizontalLine />
         <PostFooter />
       </Card>
     </div>
