@@ -1,0 +1,61 @@
+body {  
+  --primaryColor: #1877f2;
+  --navBarColor: #1877f2;
+  --navBarColorBurger: #6FAAF7;
+  --backgroundColor: #f0f2f5;
+  --cardBackgroudColor: white;
+  --inputBackgroudColor: #f0f2f5;
+  --loginInputBackgroudColor: #f0f2f5;
+  --scrollThumbColor: #D4D5D8;
+  --scrollThumbColor2: #D4D5D8;
+  --navBarTextColor: white;
+  --textPrimaryColor: black;
+  --textSecondaryColor: #737374;
+  --smallIconsPrimaryColor: #5A5B5C;
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--backgroundColor);
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  
+}
+
+.darkMode {
+  --primaryColor: #353639;
+  --navBarColor: #353639;
+  --navBarColorBurger: #5A5B5C;
+  --backgroundColor: #1c1e21;
+  --cardBackgroudColor: #353639;
+  --inputBackgroudColor: #5A5B5C;
+  --loginInputBackgroudColor: #5A5B5C;
+  --scrollThumbColor: #5A5B5C;
+  --scrollThumbColor2: #5A5B5C;
+  --navBarTextColor: #E4E6EB;
+  --textPrimaryColor: #E4E6EB;
+  --textSecondaryColor: #E4E6EB;
+  --smallIconsPrimaryColor: #E4E6EB;
+}
+
+
+

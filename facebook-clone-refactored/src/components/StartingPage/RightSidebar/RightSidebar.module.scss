@@ -1,0 +1,23 @@
+.rightSidebar {
+  .rightSidebarTitle{
+    color: var(--textSecondaryColor);
+    padding-left: 10px;
+
+  }
+  padding-top: 80px;
+  max-width: 350px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  // top: 100px;
+  height: 100vh;
+  flex-basis: 25%;
+  height: 500px;
+  // background-color: red;
+  .searchBoxContainer {
+    padding: 10px;
+    .searchBox {
+      background-color: var(--cardBackgroudColor);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.comments {
+  .userInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: space-between;
+    margin: 15px;
+  }
+  .commentInfo {
+    flex: 1;
+    background-color: gray;
+    border-radius: 15px;
+    padding: 5px 15px;
+    background-color: var(--inputBackgroudColor);
+    color: var(--textPrimaryColor);
+    .author {
+      font-weight: 500;
+    }
+    .comment {
+      font-weight: 400;
+    }
+  }
+}

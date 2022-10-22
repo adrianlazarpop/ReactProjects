@@ -1,0 +1,87 @@
+.authContainer{
+    width: 100vw;
+    height: 100vh;
+    // background-color: red;
+    display: flex;
+
+}
+.auth {
+  margin: auto;
+  padding-top: 500px;
+  width: 100%;
+  max-width: 25rem;
+  border-radius: 6px;
+  background-color: var(--cardBackgroudColor);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+  color: var(--textSecondaryColor);
+  .auth h1 {
+    text-align: center;
+    color: var(--textSecondaryColor);
+  }
+  .control {
+    margin-bottom: 0.5rem;
+    margin: 10px 0;
+    // padding: 20px;
+    .controlInput{
+      padding: 10px;
+    }
+  }
+  .control label {
+    display: block;
+    color: var(--textSecondaryColor);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .control input {
+    font: inherit;
+    background-color: var(--inputBackgroudColor);
+    color: #38015c;
+    border-radius: 4px;
+    border: 1px solid #dddfe2;
+    width: 100%;
+    text-align: left;
+    padding: 0.25rem;
+  }
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.actions button {
+  cursor: pointer;
+  font: inherit;
+  color: var(--navBarTextColor);
+  background-color: var(--primaryColor);
+  border: 1px solid white;
+  border-radius: 4px;
+  // padding: 0.5rem 2.5rem;
+  padding: 10px;
+  // margin: 0 40px;
+  width: 100%;
+}
+
+.actions button:hover {
+  background-color: lightblue;
+  border-color: cadetblue;
+}
+
+.actions .toggle {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: var(--textSecondaryColor);
+  border: none;
+  padding: 0.15rem 1.5rem;
+
+}
+
+.actions .toggle:hover {
+  background-color: transparent;
+  color: lightblue;
+}

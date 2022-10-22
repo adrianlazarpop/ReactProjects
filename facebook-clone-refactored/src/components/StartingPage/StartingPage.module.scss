@@ -1,0 +1,84 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--backgroundColor);
+  color: var(--textPrimaryColor);
+  // margin-top: 80px;
+
+  .newsfeed {
+    // border: 5px solid black;
+    flex-basis: 47%;
+    max-width: 680px;
+    padding-top: 80px;
+  }
+
+  // background-color: red;
+  .leftContent,
+  .rightContent {
+
+    min-width: 280px;
+    max-width: 360px;
+    // border: 1px solid red;
+    flex-basis: 25%;
+    // background-color: red;
+    // position: sticky;
+  }
+  .postInputContainer {
+    @include flex-row;
+  }
+  .postButtonsContainer {
+    @include flex-row;
+    .testClass {
+      flex-basis: 40%;
+    }
+  }
+}
+
+@media (max-width: 1900px) {
+  .mainContainer {
+    // background-color: lightblue;
+    justify-content: space-between;
+  }
+}
+
+// @media (max-width: 1500px) {
+//   .mainContainer {
+//     background-color: lightcoral;
+//   }
+// }
+
+@media (max-width: 1170px) {
+  .mainContainer {
+    // background-color: lightcyan;
+    // justify-content: flex-start;
+    .newsfeed {
+      flex-basis: 65%;
+    }
+    .rightContent {
+      flex-basis: 50%;
+    }
+    .leftContent {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .mainContainer {
+    justify-content: center;
+    .newsfeed {
+      flex-basis: 100%;
+      min-width: none;
+    }
+    .rightContent {
+      display: none;
+    }
+  }
+}

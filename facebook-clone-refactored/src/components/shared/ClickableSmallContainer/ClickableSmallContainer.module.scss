@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  min-height: 60px;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover{
+    background-color: rgb(198, 212, 243);
+    transition: 0.001s;
+  }
+  justify-content: flex-start;
+  &.center{
+    justify-content: center;
+  }
+}
+
+

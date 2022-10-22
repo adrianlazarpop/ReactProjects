@@ -1,0 +1,36 @@
+@mixin commonContainer {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-right: 12px;
+}
+@mixin commonItem {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container {
+  @include commonContainer;
+  &.yes {
+    &::after {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border: 2px solid var(--backgroundColor);
+      border-radius: 50%;
+      background-color: #41db51;
+      position: absolute;
+      // top: 0;
+      right: 0;
+      bottom: 0;
+    }    
+  }
+  .icon {
+    @include commonItem;
+  }
+}
+
+
+

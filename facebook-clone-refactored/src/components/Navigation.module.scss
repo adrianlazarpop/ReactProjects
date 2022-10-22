@@ -1,0 +1,129 @@
+.container {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  .header,
+  .expandedHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--navBarColor);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 0 10%;
+
+    .logo {
+      font-family: "Lato", sans-serif;
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .mobileMenuIcon {
+      display: none;
+    }
+
+    .navBar {
+      .menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .menuItem {
+          // margin: 0 1rem;
+          padding: 0 1rem;
+          .menuItemButton {
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            // background-color: var(--navBarColorBurger);
+            background-color: transparent;
+            color: var(--navBarTextColor);
+          }
+        }
+      }
+      transition: 1s;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--navBarTextColor);
+    font-weight: bold;
+    &:hover {
+      color: lightblue;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    .header {
+      .mobileMenuIcon {
+        display: block;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        background-color: var(--navBarColor);
+        color: var(--navBarTextColor);
+      }
+      .navBar {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        left: 100%;
+        .menu {
+          .menuItemHidden {
+            position: static;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+    .expandedHeader {
+      .mobileMenuIcon {
+        display: block;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        background-color: var(--navBarColor);
+        color: var(--navBarTextColor);
+      }
+      .navBar {
+        position: absolute;
+        display: block;
+        z-index: 100;
+        left: 0;
+        top: 80px;
+        .menu {
+          background-color: var(--navBarColorBurger);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .menuItemHidden {
+            display: none;
+            position: absolute;
+          }
+          .menuItem {
+            display: flex;
+            justify-content: center;
+            right: 0px;
+            top: 80px;
+            width: 100vw;
+            padding: 20px;
+          }
+        }
+        transition: 1s;
+      }
+    }
+  }
+}

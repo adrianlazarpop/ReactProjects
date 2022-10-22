@@ -1,0 +1,21 @@
+@import '../../../assets/colors/variables';
+.horizontalLine{
+  border-bottom: 1px solid $LightGrey;
+  margin: 20px 0;
+}
+
+.horizontalLine.topMin{
+  border-bottom: 1px solid $LightGrey;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.horizontalLine.min{
+  border-bottom: 1px solid $LightGrey;
+  margin: 10px 0;
+}
+
+.horizontalLine.no{
+  border-bottom: 1px solid $LightGrey;
+  margin:0;
+}
