@@ -1,29 +1,17 @@
-.flex{
+main {
+  height: 500px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
-.box{
-  height: 50px;
-  width: 50px;
-  border: 1px solid red;
-  background-color: rgb(255,0,0,.5);
-}
-
-.box:first-child{
-  margin-right: auto;
-}
-
-
-.box1{
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* box-sizing: border-box; */
-
-  background-color: red;
-  /* padding: 150px; */
-  width: 300px;
-  height: 300px;
-  border: 50px solid green;
+.toggleButton{
+  width: 400px;
+  height: 100px;
+  background-color: purple;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
 
 }
